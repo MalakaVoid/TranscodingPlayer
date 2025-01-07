@@ -18,7 +18,6 @@ export const VolumeContolContainer = styled.div`
     width: 100%;
     bottom: 0;
     left: 0;
-    transition: 0.25s;
     transition: opacity 0.2s;
     opacity: 0;
     visibility: hidden;

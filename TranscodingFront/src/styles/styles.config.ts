@@ -43,6 +43,7 @@ export const colors = {
         brightest: 'rgb(77, 77, 77)',
         medium: 'rgb(179, 179, 179)',
         enabled: 'rgba(242, 242, 242, 0.35)',
+        transperent: 'rgba(37, 37, 37, 0.83)',
         hovered: 'rgba(242, 242, 242, 0.45)',
         dark: 'rgb(51, 51, 51)',
         darkest: 'rgb(31, 31, 31)',
