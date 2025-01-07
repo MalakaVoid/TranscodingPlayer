@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        #controls {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Плеер видео</h1>
+    <video controls width="640" height="360" id="videoPlayer">
+        <source src="http://localhost:5001/video" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+
+    <div id="controls">
+        <button id="rewind">Перемотать назад</button>
+        <button id="forward">Перемотать вперед</button>
+    </div>
+
+    <script>
+        const videoPlayer = document.getElementById('videoPlayer');
+        const rewindButton = document.getElementById('rewind');
+        const forwardButton = document.getElementById('forward');
+
+        // Перемотка назад на 10 секунд
+        rewindButton.addEventListener('click', () => {
+            videoPlayer.currentTime = Math.max(0, videoPlayer.currentTime - 10);
+        });
+
+        // Перемотка вперед на 10 секунд
+        forwardButton.addEventListener('click', () => {
+            videoPlayer.currentTime = Math.min(videoPlayer.duration, videoPlayer.currentTime + 10);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.hidden{
+    display: none;
+}
+
+.visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
