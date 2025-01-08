@@ -25,14 +25,6 @@ export const ControllsWrapper = styled.div<IControlsWrapperProps>`
     opacity: ${({controlsVisible}) => controlsVisible ? '1' : '0'}
 `;
 
-export const MiddleControlsWrapper = styled.div`
-    width: 100%;
-    height: calc(100% - 60px);
-    position: absolute;
-    top: 0;
-    left: 0;
-`;
-
 export const BottomControlsWrapper = styled.div`
     display: flex;
     align-items: center;
@@ -56,32 +48,6 @@ export const CustomVideo = styled.video`
 
     ::-webkit-media-controls {display:none !important;};
     ::-webkit-media-controls-enclosure {display:none !important;};
-`;
-
-export const PlayButton = styled.div`
-    position: absolute;
-    cursor: pointer;
-    transform: translate(-50%, calc(-50% + 30px));
-    top: 50%;
-    left: 50%;
-    z-index: 3;
-    ${mq({
-        width: [
-            '40px',
-            '50px',
-            '60px',
-        ],
-        height: [
-            '40px',
-            '50px',
-            '60px',
-        ],
-    })};
-
-    svg{
-        width: 100%;
-        height: 100%;
-    };
 `;
 
 export const RangeInput = styled.input`

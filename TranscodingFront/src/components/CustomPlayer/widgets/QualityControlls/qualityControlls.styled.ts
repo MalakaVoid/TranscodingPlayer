@@ -56,4 +56,8 @@ export const QualityOption = styled.div`
         background-color: ${colors.red.brightest};
         transition: 0.2s;
     }
+
+    &.active{
+        background-color: ${colors.red.brightest};
+    }
 `;
